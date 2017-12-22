@@ -18,9 +18,11 @@ train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
+test_x, test_y = mnist.test.next_batch(1000)
+
 for i in range(1000):
     batch = mnist.train.next_batch(100)
     train_step.run(feed_dict={x: batch[0], y_: batch[1]})
 
     if i % 100 == 0 or i==1000-1:
-        print(str(accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels})*100.0)+" %")
+        print("step "+str(i)+", {0:3.1f}".format(accuracy.eval(feed_dict={x: test_x, y_: test_y})*100.0)+" %")
