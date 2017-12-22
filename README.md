@@ -39,7 +39,7 @@ https://www.python.org/downloads/ からダウンロード
 
 環境変数のpathに"Python36/" と "Python36/Scripts/"を追加する
 
-次のコマンドを管理者権限付きで実行
+次のコマンドを管理者権限付きで実行  
 pip install virtualenv  
 virtualenv tensorflow  
 tensorflow/Scripts/activate  
