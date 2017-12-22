@@ -23,7 +23,8 @@ pip install tensorflow
 Execute following commands (administrator authority is not needed)  
 tensorflow/Scripts/activate  
 cd [Directory where the code is located]  
-python FCNN.py or CNN.py
+python FCNN.py  
+python CNN.py
 
 
 
@@ -50,4 +51,5 @@ pip install tensorflow
 次のコマンドを実行する(管理者権限は必要なし)  
 tensorflow/Scripts/activate  
 cd [コードが配置されているディレクトリ]  
-python FCNN.py or CNN.py
+python FCNN.py  
+python CNN.py
