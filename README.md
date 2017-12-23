@@ -1,4 +1,6 @@
 # TensorFlow Tutorial
+These codes are based on TensorFlow Tutorial https://www.tensorflow.org/tutorials/  
+これらのコードはTensorFlowのチュートリアルを元にしました https://www.tensorflow.org/tutorials/
 
 ## Environment
 Windows10 64bit  
