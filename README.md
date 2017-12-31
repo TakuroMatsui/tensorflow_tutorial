@@ -37,17 +37,43 @@ pip3 install --upgrade tensorflow
 ## Usage
 ### python 2.7.x  
 Execute following commands  
-source [created environment name]/bin/activate  
+source [environment name]/bin/activate  
 cd [Directory where the code is located]  
 python FCNN.py  
 python CNN.py
 
 ### python 3.6.x  
 Execute following commands  
-source [created environment name]/bin/activate  
+source [environment name]/bin/activate  
 cd [Directory where the code is located]  
 python3 FCNN.py  
 python3 CNN.py
+
+
+## For Windows 10 64bit
+Python 3.6.x 64bit  
+TensorFlow 1.4.0
+
+## Starting
+Install Python  
+Download from https://www.python.org/downloads/
+
+Add "Python36/" and "Python36/Scripts/" into your environment variable path
+
+Execute following commands with administrator authority  
+pip install virtualenv  
+virtualenv [environment name]  
+[environment name]/Scripts/activate  
+pip install numpy  
+pip install scipy  
+pip install tensorflow
+
+## Usage
+Execute following commands (administrator authority is not needed)  
+[environment name]/Scripts/activate  
+cd [Directory where the code is located]  
+python FCNN.py  
+python CNN.py
 
 
 ## Ubuntu 16.04LTS 64bitで実行
@@ -68,8 +94,8 @@ pip install --upgrade tensorflow
 次のコマンドを実行  
 sudo apt-get install libcupti-dev  
 sudo apt-get install python3-pip python3-dev python-virtualenv  
-virtualenv --system-site-packages -p python3 [environment name]  
-source [environment name]/bin/activate  
+virtualenv --system-site-packages -p python3 [作成する環境の名前]  
+source [作成した環境の名前]/bin/activate  
 easy_install -U pip  
 pip3 install --upgrade tensorflow
 
@@ -77,44 +103,17 @@ pip3 install --upgrade tensorflow
 ## 使い方
 ### python 2.7.x  
 次のコマンドを実行  
-source [created environment name]/bin/activate  
-cd [Directory where the code is located]  
+source [作成した環境の名前]/bin/activate  
+cd [コードが配置されているディレクトリ]  
 python FCNN.py  
 python CNN.py
 
 ### python 3.6.x  
 次のコマンドを実行  
-source [created environment name]/bin/activate  
-cd [Directory where the code is located]  
+source [作成した環境の名前]/bin/activate  
+cd [コードが配置されているディレクトリ]  
 python3 FCNN.py  
 python3 CNN.py
-
-
-## For Windows 10 64bit
-Python 3.6.x 64bit  
-TensorFlow 1.4.0
-
-## Starting
-Install Python  
-Download from https://www.python.org/downloads/
-
-Add "Python36/" and "Python36/Scripts/" into your environment variable path
-
-Execute following commands with administrator authority  
-pip install virtualenv  
-virtualenv tensorflow  
-tensorflow/Scripts/activate  
-pip install numpy  
-pip install scipy  
-pip install tensorflow
-
-## Usage
-Execute following commands (administrator authority is not needed)  
-tensorflow/Scripts/activate  
-cd [Directory where the code is located]  
-python FCNN.py  
-python CNN.py
-
 
 ## Windows 10 64bitで実行
 Python 3.6.x 64bit  
@@ -129,14 +128,14 @@ https://www.python.org/downloads/ からダウンロード
 次のコマンドを管理者権限付きで実行  
 pip install virtualenv  
 virtualenv tensorflow  
-tensorflow/Scripts/activate  
+[作成した環境の名前]/Scripts/activate  
 pip install numpy  
 pip install scipy  
 pip install tensorflow
 
 ## 使い方
 次のコマンドを実行する(管理者権限は必要なし)  
-tensorflow/Scripts/activate  
+[作成した環境の名前]/Scripts/activate  
 cd [コードが配置されているディレクトリ]  
 python FCNN.py  
 python CNN.py
