@@ -1,10 +1,97 @@
 # TensorFlow Tutorial
-These codes are based on TensorFlow Tutorial https://www.tensorflow.org/tutorials/  
-これらのコードはTensorFlowのチュートリアルを基にしました https://www.tensorflow.org/tutorials/
+These codes are based on TensorFlow Tutorial  
+https://www.tensorflow.org/tutorials/  
+There are ways with Ubuntu 16.04 LTS and Windows 10.
 
-## Environment
-Windows10 64bit  
-Python 3.6.3 64bit  
+
+これらのコードはTensorFlowのチュートリアルを基にしました  
+https://www.tensorflow.org/tutorials/  
+Ubuntu 16.04LTSとWindows 10で実行する方法を説明します。
+
+
+## For Ubuntu 16.04LTS 64bit
+Python  2.7.x or 3.6.x 64bit  
+TensorFlow 1.4.0
+
+## Starting
+### python 2.7.x  
+Execute following commands  
+sudo apt-get install libcupti-dev  
+sudo apt-get install python-pip python-dev python-virtualenv  
+virtualenv --system-site-packages [environment name]  
+source [environment name]/bin/activate  
+easy_install -U pip  
+pip install --upgrade tensorflow
+
+
+### python 3.6.x  
+Execute following commands  
+sudo apt-get install libcupti-dev  
+sudo apt-get install python3-pip python3-dev python-virtualenv  
+virtualenv --system-site-packages -p python3 [environment name]  
+source [environment name]/bin/activate  
+easy_install -U pip  
+pip3 install --upgrade tensorflow
+
+
+## Usage
+### python 2.7.x  
+Execute following commands  
+source [created environment name]/bin/activate  
+cd [Directory where the code is located]  
+python FCNN.py  
+python CNN.py
+
+### python 3.6.x  
+Execute following commands  
+source [created environment name]/bin/activate  
+cd [Directory where the code is located]  
+python3 FCNN.py  
+python3 CNN.py
+
+
+## Ubuntu 16.04LTS 64bitで実行
+Python 2.7.x または 3.6.x 64bit  
+TensorFlow 1.4.0
+
+## 始め方
+### python 2.7.x
+次のコマンドを実行  
+sudo apt-get install libcupti-dev  
+sudo apt-get install python-pip python-dev python-virtualenv  
+virtualenv --system-site-packages [作成する環境の名前]  
+source [作成した環境の名前]/bin/activate  
+easy_install -U pip  
+pip install --upgrade tensorflow
+
+### python 3.6.x
+次のコマンドを実行  
+sudo apt-get install libcupti-dev  
+sudo apt-get install python3-pip python3-dev python-virtualenv  
+virtualenv --system-site-packages -p python3 [environment name]  
+source [environment name]/bin/activate  
+easy_install -U pip  
+pip3 install --upgrade tensorflow
+
+
+## 使い方
+### python 2.7.x  
+次のコマンドを実行  
+source [created environment name]/bin/activate  
+cd [Directory where the code is located]  
+python FCNN.py  
+python CNN.py
+
+### python 3.6.x  
+次のコマンドを実行  
+source [created environment name]/bin/activate  
+cd [Directory where the code is located]  
+python3 FCNN.py  
+python3 CNN.py
+
+
+## For Windows 10 64bit
+Python 3.6.x 64bit  
 TensorFlow 1.4.0
 
 ## Starting
@@ -29,10 +116,8 @@ python FCNN.py
 python CNN.py
 
 
-
-## 環境
-Windows10 64bit  
-Python 3.6.3 64bit  
+## Windows 10 64bitで実行
+Python 3.6.x 64bit  
 TensorFlow 1.4.0
 
 ## 始め方
