@@ -2,7 +2,7 @@
 These codes are based on TensorFlow Tutorial.  
 https://www.tensorflow.org/tutorials/  
 There are ways with Ubuntu 16.04 LTS and Windows 10.  
-If you want to use GPU, execute "pip install --upgrade tensorflow-gpu" instead of "pip install --upgrade tensorflow."  
+If you want to use GPU, install CUDA toolkit and cuDNN and execute "pip install --upgrade tensorflow-gpu" instead of "pip install --upgrade tensorflow."  
 
 ## For Ubuntu 16.04LTS 64bit
 Python  2.7.x or 3.6.x 64bit  
