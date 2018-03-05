@@ -1,5 +1,5 @@
 # TensorFlow Tutorial
-These codes are based on TensorFlow Tutorial  
+These codes are based on TensorFlow Tutorial.  
 https://www.tensorflow.org/tutorials/  
 There are ways with Ubuntu 16.04 LTS and Windows 10.  
 If you want to use GPU, execute "pip install --upgrade tensorflow-gpu" instead of "pip install --upgrade tensorflow."  
